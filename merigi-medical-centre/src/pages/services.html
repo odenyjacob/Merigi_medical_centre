@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar container">
             <div class="logo">
                 <img src="../../public/images/logo.png" alt="Merigi Medical Centre Logo">
                 <div class="logo-text">
@@ -18,9 +18,7 @@
                 </div>
             </div>
             <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="../../index.html">Home</a></li>
@@ -33,59 +31,53 @@
     </header>
 
     <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Our Medical Services</h1>
-                <p>We provide compassionate, accessible, and high-quality healthcare that brings healing and hope to our community.</p>
-            </div>
+        <section class="page-header container">
+            <h1>Our Medical Services</h1>
+            <p>We provide compassionate, accessible, and high-quality healthcare that brings healing and hope to our community.</p>
         </section>
 
-        <section class="services-list-section">
-            <div class="container">
-                <div class="services-grid-detailed">
-                    <div class="service-card-full" onclick="openModal('outpatient')">
-                        <div class="service-icon">🩺</div>
-                        <h3>Outpatient Services</h3>
-                        <p>Prompt medical consultation, diagnosis, and treatment for all age groups.</p>
-                        <span class="read-more">Learn More +</span>
-                    </div>
+        <section class="services-list-section container">
+            <div class="services-grid-detailed">
+                <div class="service-card-full" onclick="openModal('outpatient')">
+                    <div class="service-icon">🩺</div>
+                    <h3>Outpatient Services</h3>
+                    <p>Prompt medical consultation, diagnosis, and treatment for all age groups.</p>
+                    <span class="read-more">Learn More +</span>
+                </div>
 
-                    <div class="service-card-full" onclick="openModal('inpatient')">
-                        <div class="service-icon">🏥</div>
-                        <h3>Inpatient Services</h3>
-                        <p>Comfortable, safe, and well-equipped rooms with continuous attention.</p>
-                        <span class="read-more">Learn More +</span>
-                    </div>
+                <div class="service-card-full" onclick="openModal('inpatient')">
+                    <div class="service-icon">🏥</div>
+                    <h3>Inpatient Services</h3>
+                    <p>Comfortable, safe, and well-equipped rooms with continuous medical attention.</p>
+                    <span class="read-more">Learn More +</span>
+                </div>
 
-                    <div class="service-card-full highlight-maternity" onclick="openModal('maternity')">
-                        <div class="service-icon">👶</div>
-                        <h3>Maternity Services (24/7)</h3>
-                        <p>Comprehensive care including antenatal, delivery, and postnatal support.</p>
-                        <span class="read-more">Learn More +</span>
-                    </div>
+                <div class="service-card-full highlight-maternity" onclick="openModal('maternity')">
+                    <div class="service-icon">👶</div>
+                    <h3>Maternity Services (24/7)</h3>
+                    <p>Comprehensive care including antenatal, delivery, and postnatal support.</p>
+                    <span class="read-more">Learn More +</span>
+                </div>
 
-                    <div class="service-card-full" onclick="openModal('lab')">
-                        <div class="service-icon">🧪</div>
-                        <h3>Laboratory Services</h3>
-                        <p>Accurate and timely diagnostic tests using modern equipment.</p>
-                        <span class="read-more">Learn More +</span>
-                    </div>
+                <div class="service-card-full" onclick="openModal('lab')">
+                    <div class="service-icon">🧪</div>
+                    <h3>Laboratory Services</h3>
+                    <p>Accurate and timely diagnostic tests using modern laboratory equipment.</p>
+                    <span class="read-more">Learn More +</span>
+                </div>
 
-                    <div class="service-card-full" onclick="openModal('pharmacy')">
-                        <div class="service-icon">💊</div>
-                        <h3>Pharmacy Services</h3>
-                        <p>Quality, affordable medicines with professional guidance.</p>
-                        <span class="read-more">Learn More +</span>
-                    </div>
-					
-					<div class="service-card-full" onclick="openModal('imaging')">
-					<div class="service-icon">🩻</div>
-					<h3>Diagnostic Imaging</h3>
-					<p>Advanced X-Ray and Ultrasound services for precise internal diagnosis.</p>
-					<span class="read-more">View Imaging Options +</span>
-					</div>
-
-                   
+                <div class="service-card-full" onclick="openModal('pharmacy')">
+                    <div class="service-icon">💊</div>
+                    <h3>Pharmacy Services</h3>
+                    <p>Quality, affordable medicines with professional pharmaceutical guidance.</p>
+                    <span class="read-more">Learn More +</span>
+                </div>
+                
+                <div class="service-card-full" onclick="openModal('imaging')">
+                    <div class="service-icon">🩻</div>
+                    <h3>Diagnostic Imaging</h3>
+                    <p>Advanced X-Ray and Ultrasound services for precise internal diagnosis.</p>
+                    <span class="read-more">View Imaging Options +</span>
                 </div>
             </div>
         </section>
@@ -100,14 +92,15 @@
     </div>
 
     <footer class="main-footer">
-	<div class="footer-bottom">
+        <div class="footer-bottom container">
             <p>© <span id="current-year"></span> Merigi Medical Centre. Ray of hope.</p>
         </div>
     </footer>
 
+    <button id="backToTop" class="back-to-top" title="Go to top">
+        <span class="arrow">↑</span>
+    </button>
+
     <script src="../assets/js/main.js"></script>
-	<button id="backToTop" class="back-to-top" title="Go to top">
-    <span class="arrow">↑</span>
-</button>
 </body>
 </html>

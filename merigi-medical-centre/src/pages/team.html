@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team | Merigi Medical Centre</title>
+    <title>Contact Us | Merigi Medical Centre</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles/main.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar container">
             <div class="logo">
                 <img src="../../public/images/logo.png" alt="Merigi Medical Centre Logo">
                 <div class="logo-text">
@@ -24,13 +24,13 @@
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="team.html" class="active">Our Team</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
+	
+	 <main>
         <section class="page-header team-hero">
             <div class="container">
                 <h1>Meet Our Experts</h1>
@@ -42,7 +42,7 @@
             <div class="team-grid">
                 <div class="team-card">
                     <div class="member-image">
-                        <img src="../../public/images/doctor-placeholder.jpg" alt="Clinical Officer">
+                        <img src="../../public/images/doctor-placeholder.jpg" alt="Merigi Clinical Team">
                     </div>
                     <div class="member-info">
                         <h3>Clinical Team</h3>
@@ -53,7 +53,7 @@
 
                 <div class="team-card">
                     <div class="member-image">
-                        <img src="../../public/images/nurse-placeholder.jpg" alt="Nursing Staff">
+                        <img src="../../public/images/nurse-placeholder.jpg" alt="Merigi Nursing Department">
                     </div>
                     <div class="member-info">
                         <h3>Nursing Department</h3>
@@ -64,7 +64,7 @@
 
                 <div class="team-card">
                     <div class="member-image">
-                        <img src="../../public/images/lab-placeholder.jpg" alt="Lab Technician">
+                        <img src="../../public/images/lab-placeholder.jpg" alt="Merigi Diagnostic Team">
                     </div>
                     <div class="member-info">
                         <h3>Diagnostic Team</h3>
@@ -74,37 +74,44 @@
                 </div>
             </div>
         </section>
-		<section class="join-team-banner">
-    <div class="container">
-        <div class="join-content">
-            <div class="join-text">
-                <h2>Join Our Medical Team</h2>
-                <p>Are you a dedicated healthcare professional looking to make a difference in Bomet? We are always looking for compassionate Clinical Officers, Nurses, Lab Technologists, and Support Staff to join our growing family.</p>
-                
-                <ul class="benefit-list">
-                    <li>✨ Collaborative work environment</li>
-                    <li>✨ 24/7 facility with flexible shifts</li>
-                    <li>✨ Opportunity to serve the Merigi community</li>
-                </ul>
 
-                <div class="cta-wrapper">
-                    <a href="mailto:careers@merigimedical.com" class="btn-primary">Send Your CV</a>
-                    <a href="contact.html" class="btn-outline">Inquire About Openings</a>
+        <section class="join-team-banner">
+            <div class="container">
+                <div class="join-content">
+                    <div class="join-text">
+                        <h2>Join Our Medical Team</h2>
+                        <p>Are you a dedicated healthcare professional looking to make a difference in Bomet? We are always looking for compassionate professionals to join our growing family.</p>
+                        
+                        <ul class="benefit-list">
+                            <li>✨ Collaborative work environment</li>
+                            <li>✨ 24/7 facility with flexible shifts</li>
+                            <li>✨ Opportunity to serve the Merigi community</li>
+                        </ul>
+
+                        <div class="cta-wrapper">
+                            <a href="mailto:careers@merigimedical.com" class="btn-primary">Send Your CV</a>
+                            <a href="contact.html" class="btn-primary">Inquire About Openings</a>
+                        </div>
+                    </div>
+                    <div class="join-icon">
+                        <div class="stethoscope-circle">🩺</div>
+                    </div>
                 </div>
             </div>
-            <div class="join-icon">
-                <div class="stethoscope-circle">🩺</div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
 
+  
+
     <footer class="main-footer">
-        <div class="footer-bottom">
+        <div class="footer-bottom container">
             <p>© <span id="current-year"></span> Merigi Medical Centre. Ray of hope.</p>
         </div>
     </footer>
+
+   <button id="backToTop" class="back-to-top" title="Go to top">
+        <span class="arrow">↑</span>
+    </button>
 
     <script src="../assets/js/main.js"></script>
 </body>

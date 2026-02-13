@@ -32,3 +32,5 @@ Schema Markup: Specialized code that tells Google "This is a Hospital" and "This
 Lazy Loading: Ensure images only load as the user scrolls to them, making the site lightning-fast on mobile data.
 
 Update Blogs in Home page
+
+create a simple "Success Message" pop-up for the contact form so patients know their message was sent successfully
