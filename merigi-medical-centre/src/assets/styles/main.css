@@ -177,9 +177,107 @@ body {
     align-items: start;
 }
 
-.contact-details-list { list-style: none; margin: 25px 0; }
-.contact-details-list li { margin-bottom: 15px; font-size: 1.1rem; }
-.contact-details-list a { color: var(--merigi-teal); text-decoration: none; font-weight: 600; }
+/* Updated Contact Info Styles - More Spacious & Organized */
+.contact-info {
+    max-width: 100%;
+}
+
+.contact-info h2 {
+    color: var(--merigi-blue);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info > p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 59, 92, 0.1);
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item .icon {
+    font-size: 1.5rem;
+    min-width: 2rem;
+    color: var(--merigi-teal);
+    background: rgba(41, 182, 166, 0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.info-item .content {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.info-item strong {
+    color: var(--merigi-blue);
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.info-item a {
+    color: var(--merigi-teal);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    word-break: break-word;
+}
+
+.info-item a:hover {
+    color: var(--merigi-blue);
+    text-decoration: underline;
+}
+
+.info-item span:not(.icon):not(.content) {
+    color: var(--text-main);
+}
+
+/* Address specific styling */
+.info-item.address .content {
+    font-style: normal;
+    line-height: 1.7;
+}
+
+/* Contact details list (if still needed) */
+.contact-details-list { 
+    list-style: none; 
+    margin: 25px 0; 
+}
+
+.contact-details-list li { 
+    margin-bottom: 15px; 
+    font-size: 1.1rem; 
+}
+
+.contact-details-list a { 
+    color: var(--merigi-teal); 
+    text-decoration: none; 
+    font-weight: 600; 
+}
 
 .map-container {
     margin-top: 30px;
@@ -189,8 +287,15 @@ body {
     border: 1px solid #e2e8f0;
 }
 
-.contact-form-card { padding: 40px; border: 1px solid #f0f0f0; }
-.contact-form-card h3 { margin-bottom: 25px; color: var(--merigi-blue); }
+.contact-form-card { 
+    padding: 40px; 
+    border: 1px solid #f0f0f0; 
+}
+
+.contact-form-card h3 { 
+    margin-bottom: 25px; 
+    color: var(--merigi-blue); 
+}
 
 /* Maternity Highlight */
 .highlight-maternity { background: #fffafa; border: 1px solid #ffecec; }
@@ -208,7 +313,6 @@ body {
     width: 14px; height: 14px; background: var(--merigi-teal);
     border-radius: 50%; border: 3px solid var(--white);
 }
-
 /* ==========================================================================
    6. MODAL & UI TOOLS
    ========================================================================== */
