@@ -90,22 +90,55 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (e) => { if (e.target === serviceModal) closeModal(); });
     window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
-    // --- 5. Contact Form Simulation ---
+    // --- 5. Contact Form Submission (Formspree Integrated) ---
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+        // Create an element dynamically to show clear status messages (so we don't have to use ugly alerts)
+        const statusDiv = document.createElement('div');
+        statusDiv.className = 'form-status-msg';
+        statusDiv.style.marginTop = '15px';
+        statusDiv.style.fontWeight = '600';
+        statusDiv.style.display = 'none';
+        contactForm.appendChild(statusDiv);
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault(); // Stop page reload
+            
             const submitBtn = this.querySelector('.btn-submit');
             const originalText = submitBtn.innerText;
             
+            // UI state while processing
             submitBtn.innerText = "Sending...";
             submitBtn.disabled = true;
+            statusDiv.style.display = 'block';
+            statusDiv.style.color = '#666';
+            statusDiv.textContent = 'Processing your inquiry...';
 
-            setTimeout(() => {
-                alert(`Thank you! Your inquiry has been sent to Merigi Medical Centre.`);
-                contactForm.reset();
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: contactForm.method,
+                    body: new FormData(contactForm),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    statusDiv.style.color = 'green';
+                    statusDiv.textContent = 'Thank you! Your inquiry has been sent successfully.';
+                    contactForm.reset(); // Wipe fields for next entry
+                } else {
+                    const data = await response.json();
+                    statusDiv.style.color = 'red';
+                    statusDiv.textContent = data.errors ? data.errors.map(err => err.message).join(', ') : 'Oops! There was a problem submitting your form.';
+                }
+            } catch (error) {
+                statusDiv.style.color = 'red';
+                statusDiv.textContent = 'Network error. Please verify your connection and try again.';
+            } finally {
+                // Return button to original state
                 submitBtn.innerText = originalText;
                 submitBtn.disabled = false;
-            }, 1500);
+            }
         });
     }
 
