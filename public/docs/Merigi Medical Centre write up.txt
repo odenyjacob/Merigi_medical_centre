@@ -1,0 +1,53 @@
+Merigi Medical Centre:
+
+1. Primary Navigation (The Header)
+This is what users see on every page. Keep it clean and functional.
+
+Home: A high-level overview of the centre.
+
+About Us: Mission, vision, and the history of the clinic.
+
+Services: A dropdown menu of specialties (e.g., General Consultation, Laboratory, Pharmacy, Maternity).
+
+Our Team: Profiles of doctors and specialists to build patient rapport.
+
+Patient Portal/Information: Insurance partners, billing info, and "What to expect."
+
+Contact Us: Map, phone numbers, and emergency contact.
+
+2. Essential Page Breakdowns
+Home Page (The "Front Desk")
+Hero Section: A high-quality photo of the facility with a clear "Book Appointment" button.
+
+Quick Links: Icons for "Find a Doctor," "Emergency Services," and "View Results."
+
+Operating Hours: Clearly visible (especially if you have 24/7 services).
+
+Testimonials: Brief quotes from satisfied patients.
+
+Services Page (The "Clinical Core")
+Instead of one long list, categorize your offerings:
+
+Outpatient Care: General check-ups, immunizations.
+
+Inpatient Care: Ward information, nursing care.
+
+Diagnostics: X-ray, Ultrasound, Lab tests.
+
+Specialized Clinics: Antenatal, Diabetes management, Pediatrics.
+
+Contact & Location
+Google Maps Integration: So patients can get GPS directions instantly.
+
+Direct Call Button: Vital for mobile users in an emergency.
+
+Inquiry Form: For non-urgent questions.
+
+3. The Footer (The "Safety Net")
+Emergency Contact: Highlighted in red or bold.
+
+Social Media Links: Facebook or LinkedIn for community updates.
+
+Legal: Privacy Policy and Terms of Service.
+
+Newsletter Signup: For health tips and facility updates.

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Merigi Medical Centre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <img src="../../public/images/logo.png" alt="Merigi Medical Centre Logo">
+                <div class="logo-text">
+                    <h1>Merigi Medical Centre</h1>
+                    <span class="slogan">Ray of Hope</span>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header container">
+            <h1>Our Medical Services</h1>
+            <p>We provide compassionate, accessible, and high-quality healthcare that brings healing and hope to our community.</p>
+        </section>
+
+        <section class="services-list-section container">
+            <div class="services-grid-detailed">
+                <div class="service-card-full" onclick="openModal('outpatient')">
+                    <div class="service-icon">🩺</div>
+                    <h3>Outpatient Services</h3>
+                    <p>Prompt medical consultation, diagnosis, and treatment for all age groups.</p>
+                    <span class="read-more">Learn More +</span>
+                </div>
+
+                <div class="service-card-full" onclick="openModal('inpatient')">
+                    <div class="service-icon">🏥</div>
+                    <h3>Inpatient Services</h3>
+                    <p>Comfortable, safe, and well-equipped rooms with continuous medical attention.</p>
+                    <span class="read-more">Learn More +</span>
+                </div>
+
+                <div class="service-card-full highlight-maternity" onclick="openModal('maternity')">
+                    <div class="service-icon">👶</div>
+                    <h3>Maternity Services (24/7)</h3>
+                    <p>Comprehensive care including antenatal, delivery, and postnatal support.</p>
+                    <span class="read-more">Learn More +</span>
+                </div>
+
+                <div class="service-card-full" onclick="openModal('lab')">
+                    <div class="service-icon">🧪</div>
+                    <h3>Laboratory Services</h3>
+                    <p>Accurate and timely diagnostic tests using modern laboratory equipment.</p>
+                    <span class="read-more">Learn More +</span>
+                </div>
+
+                <div class="service-card-full" onclick="openModal('pharmacy')">
+                    <div class="service-icon">💊</div>
+                    <h3>Pharmacy Services</h3>
+                    <p>Quality, affordable medicines with professional pharmaceutical guidance.</p>
+                    <span class="read-more">Learn More +</span>
+                </div>
+                
+                <div class="service-card-full" onclick="openModal('imaging')">
+                    <div class="service-icon">🩻</div>
+                    <h3>Diagnostic Imaging</h3>
+                    <p>Advanced X-Ray and Ultrasound services for precise internal diagnosis.</p>
+                    <span class="read-more">View Imaging Options +</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-bottom container">
+            <p>© <span id="current-year"></span> Merigi Medical Centre. Ray of Hope.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" title="Go to top">
+        <span class="arrow">↑</span>
+    </button>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

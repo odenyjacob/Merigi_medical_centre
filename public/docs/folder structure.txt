@@ -1,0 +1,27 @@
+merigi-medical-centre/
+├── public/                 # Static assets (no code here)
+│   ├── images/             # Doctor headshots, facility photos
+│   ├── icons/              # Favicon, social media icons
+│   └── docs/               # Patient forms (PDFs), insurance lists
+├── src/                    # Main source code
+│   ├── assets/             # Global styles and fonts
+│   │   ├── styles/         # CSS/Sass files (main.css, variables.css)
+│   │   └── fonts/          # Custom typography
+│   ├── components/         # Reusable UI elements
+│   │   ├── Header/         # Navigation menu
+│   │   ├── Footer/         # Contact info & links
+│   │   ├── BookingForm/    # Appointment logic
+│   │   └── UI/             # Buttons, Cards, Inputs
+│   ├── pages/              # The actual routes/views
+│   │   ├── Home.html       # Hero section, quick links
+│   │   ├── about.html      # History, Mission/Vision
+│   │   ├── services.html   # Laboratory, Pharmacy, Maternity
+│   │   ├── team.html       # Staff directory
+│   │   └── contact.html    # Maps and contact form
+│   ├── hooks/              # Custom logic (e.g., useBooking)
+│   ├── utils/              # Helper functions (date formatting, validators)
+│   └── App.js              # Root component
+├── .gitignore              # Files to exclude from Git
+├── package.json            # Project dependencies
+└── README.md               # Documentation for developers
+└── index.html
